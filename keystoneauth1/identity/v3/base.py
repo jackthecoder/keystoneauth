@@ -54,7 +54,8 @@ class BaseAuth(base.BaseIdentityPlugin):
                  project_domain_id=None,
                  project_domain_name=None,
                  reauthenticate=True,
-                 include_catalog=True):
+                 include_catalog=True,
+                 **kwargs):
         super(BaseAuth, self).__init__(auth_url=auth_url,
                                        reauthenticate=reauthenticate)
         self.trust_id = trust_id
